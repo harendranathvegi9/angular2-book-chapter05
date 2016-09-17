@@ -6,31 +6,31 @@
 <form>
   <div class="form-group">
     <label for="brand">Brand</label>
-    <input id="brand" type="text" class="form-control" [(ngModel)]="model.brand" required>
+    <input id="brand" type="text" class="form-control" [(ngModel)]="model.brand" required name="brand">
   </div>
   <div class="form-group">
     <label for="model">Model</label>
-    <input id="model" type="text" class="form-control" [(ngModel)]="model.model" required>
+    <input id="model" type="text" class="form-control" [(ngModel)]="model.model" required name="model">
   </div>
   <div class="form-group">
     <label for="fuelType">Fuel Type</label>
-    <select id="fuelType" class="form-control" [(ngModel)]="model.fuelType">
-      <option *ngFor="#ft of fuelTypes" [value]="ft">{{ft}}</option>
+    <select id="fuelType" class="form-control" [(ngModel)]="model.fuelType" name="fuelType">
+      <option *ngFor="let ft of fuelTypes" [value]="ft">{{ft}}</option>
     </select>
   </div>
   <div class="form-group">
     <label for="bodyStyle">Body Style</label>
-    <select id="bodyStyle" class="form-control" [(ngModel)]="model.bodyStyle">
-      <option *ngFor="#bs of bodyStyles" [value]="bs">{{bs}}</option>
+    <select id="bodyStyle" class="form-control" [(ngModel)]="model.bodyStyle" name="bodyStyle">
+      <option *ngFor="let bs of bodyStyles" [value]="bs">{{bs}}</option>
     </select>
   </div>
   <div class="form-group">
     <label for="topSpeed">Top Speed (mph)</label>
-    <input id="topSpeed" type="text" class="form-control" [(ngModel)]="model.topSpeed">
+    <input id="topSpeed" type="text" class="form-control" [(ngModel)]="model.topSpeed" name="topSpeed">
   </div>
   <div class="form-group">
     <label for="power">Power (HP)</label>
-    <input id="power" type="text" class="form-control" [(ngModel)]="model.power">
+    <input id="power" type="text" class="form-control" [(ngModel)]="model.power" name="power">
   </div>
 </form>
 <hr />

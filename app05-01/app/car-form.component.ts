@@ -1,5 +1,4 @@
-import {Component} from 'angular2/core';
-import {NgForm} from 'angular2/common';
+import {Component} from '@angular/core';
 import {Car} from './car';
 
 @Component({

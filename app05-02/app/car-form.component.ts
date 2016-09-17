@@ -1,6 +1,5 @@
-import {Component} from 'angular2/core';
-import {NgForm} from 'angular2/common';
-import {Car} from './car';
+import { Component } from '@angular/core';
+import { Car } from './car';
 
 @Component({
   selector: 'car-form',
@@ -17,5 +16,5 @@ export class CarFormComponent {
     this.submitted = true;
   }
 
-  get diagnostic() { return JSON.stringify(this.model);
+  get diagnostic() { return JSON.stringify(this.model); }
 }

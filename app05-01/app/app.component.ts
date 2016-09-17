@@ -1,9 +1,7 @@
-import {Component} from 'angular2/core';
-import {CarFormComponent} from './car-form.component'
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: '<car-form></car-form>',
-  directives: [CarFormComponent]
+  template: '<car-form></car-form>'
 })
 export class AppComponent {}
